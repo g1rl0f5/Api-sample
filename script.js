@@ -27,6 +27,8 @@ document.getElementById("ageForm").addEventListener("submit", function (event) {
     }
 
     fetchPredictedAge(name);
+
+    document.getElementById("ageForm").reset();
 });
 
 async function fetchPredictedAge(name) {
